@@ -16,8 +16,15 @@ Route::get('add_to_cart/{id}',['uses'=>'ProductController@getAddToCart','as'=>'p
 Route::get('shopping-cart',['uses'=>'ProductController@getCart','as'=>'products.shoppingCart']);
 Route::get('/','PagesController@getIndex');
 Route::get('showDesign', 'PagesController@showDesign');
-Route::get('removeOne/{id}',['uses'=>'ProductController@RemoveOne','as'=>'products.removeOne']);
-Route::get('removeAll/{id}',['uses'=>'ProductController@RemoveAll','as'=>'products.removeAll']);
+Route::get('/reduce/{id}', [
+    'uses' => 'ProductController@getReduceByOne',
+    'as' => 'product.reduceByOne'
+]);
+
+Route::get('/remove/{id}', [
+    'uses' => 'ProductController@getRemoveItem',
+    'as' => 'product.remove'
+]);
 
 Route::group(['middleware'=>['web','auth']],function(){
     //checkout

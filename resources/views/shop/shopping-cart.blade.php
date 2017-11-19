@@ -17,8 +17,8 @@
                                  dropdown-toggle" data-toggle="dropdown" name="button">
                              Remove <span class="caret"></span></button>
                              <ul class="dropdown-menu">
-                                    <li><a href="{{ route('products.removeOne',['id'=>$product['item']['id']]) }}">Remove 1</a></li>
-                                    <li><a href="{{ route('products.removeAll',['id'=>$product['item']['id']]) }}">Remove all</a></li>
+                                 <li><a href="{{ route('product.reduceByOne', ['id' => $product['item']['id']]) }}">Remove one</a></li>
++                                <li><a href="{{ route('product.remove', ['id' => $product['item']['id']]) }}">Remove all</a></li>
                              </ul>
                             </div>
                         </li>
