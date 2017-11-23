@@ -29,17 +29,6 @@ class PurchaseController extends Controller
     {
         return view('purchase.create');
     }
-    Public function getAddToCart(Request $request,$id)//add product to cart
-    {
-            $purchase=Purchase::find($id);
-            $oldCart=Session::has('cart') ? Session::get('cart') : null;
-            $cart=new Cart($oldCart);
-            $cart->add($purchase,$purchase->id);
-
-            $request->session()->put('cart',$cart);
-
-            return redirect()->route('products.shoppingCart',$purchase->id);
-        }
     /**
      * Store a newly created resource in storage.
      *

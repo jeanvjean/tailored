@@ -51,11 +51,11 @@ class ProfileController extends Controller
     public function update(Request $request)
     {
         $this->validate($request,[
-            'city'=>'required',
-            'country'=>'required',
-            'address'=>'required',
-            'phone_no'=>'required',
-            'about'=>'required',
+            'city'=>'nullable',
+            'country'=>'nullable',
+            'address'=>'nullable',
+            'phone_no'=>'nullable',
+            'about'=>'nullable',
             'brand'=>'nullable',
             'work_email'=>'nullable',
             'website'=>'nullable',

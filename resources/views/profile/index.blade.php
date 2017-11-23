@@ -128,15 +128,17 @@
             @endif
 		</div>
         <div class="clearfix"> </div>
+        <hr>
         @if (Auth::id()==$user->id)
             <div class="col-md-6 col-md-offset-3">
-                @foreach ($products as $product)
+                <h5> My Shop Products </h5>
                 <div class="">
                     <ol>
+                    @foreach ($products as $product)
                         <li>{{ $product->name }} <a href="{{ route('products.show',$product->id) }}">View</a></li>
+                    @endforeach
                     </ol>
                 </div>
-            @endforeach
             </div>
         @endif
 	</div>

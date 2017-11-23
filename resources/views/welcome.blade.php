@@ -28,7 +28,7 @@
                 @forelse ($designs as $design)
                     <div class="col-sm-3 col-xs-3 w3welcome-grids">
                         <img src="{{ url('../') }}/storage/designs/{{ $design->design_img }}" class="img-responsive">
-                        <p>Design By:{{ $design->user->profile->brand }}</p>
+                        <p>Design By:<a href="{{url('/profile')}}/{{$design->user->slug}}">{{ $design->user->profile->brand }}</a></p>
                     </div><br>
                 @empty
                     <div class="text-center">

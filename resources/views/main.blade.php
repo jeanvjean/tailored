@@ -8,7 +8,7 @@
         </div>
             <div class="">
                 <div class="copy-w3right">
-            		<div class="">
+            		<div class ="">
                         @if (Auth::check())
                             <div class="top-nav bottom-w3lnav">
                                 <ul>
@@ -21,7 +21,7 @@
                                 </ul>
                             </div>
                         @endif
-            			<p align="center">&copy DevsMan 2017 </p>
+            			<p align="center"> copyright Tailored 2017 </p>
             		</div>
             	</div>
 
