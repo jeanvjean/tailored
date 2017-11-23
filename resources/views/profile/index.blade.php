@@ -55,45 +55,6 @@
     			<div class="clearfix"> </div>
     		</div>
 	   </div>
-	<div class="col-md-12">
-        <div class="contact">
-		<div class="container">
-			<div class="contact-agileinfo">
-				<div class="col-md-7 contact-right">
-                    	<h3 class="agileits-title">Leave A Message</h3>
-					<form action="{{ route('comments.store') }}" method="post">
-                        {{ csrf_field() }}
-						<input type="text" name="name" placeholder="Name" required="">
-						<input type="text" class="email" name="email" placeholder="Email" required="">
-						<input type="text" name="phone no" placeholder="Phone" required="">
-						<textarea name="comment" placeholder="Message" required=""></textarea>
-						<input type="submit" class="" value="SUBMIT" >
-					</form>
-				</div>
-				<div class="col-md-5 contact-left" style="background:#ffffff">
-                    <h3 class="agileits-title">Contact Me</h3>
-					<div class="address">
-						<h5>Address:</h5>
-						<p><i class="glyphicon glyphicon-home">{{ $user->profile->address }}</i></p>
-					</div>
-					<div class="address address-mdl">
-						<h5>Phones:</h5>
-						<p><i class="glyphicon glyphicon-earphone"></i>{{ $user->profile->phone_no }}</p>
-					</div>
-					<div class="address">
-						<h5>Website:</h5>
-						<p><i class="glyphicon glyphicon-envelope"></i> <a href="">{{ $user->profile->website }}</a></p>
-					</div>
-					<div class="address">
-						<h5>Email:</h5>
-						<p><i class="glyphicon glyphicon-envelope"></i> <a href="#">{{ $user->profile->work_email }}</a></p>
-					</div>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-	</div>
-	</div>
 	<div class="team">
 		<div class="container">
 			<h3 class="agileits-title">{{ $user->name }}'s Designs</h3>

@@ -987,7 +987,7 @@ window.Vue = __webpack_require__(35);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example', __webpack_require__(38));
+Vue.component('Request', __webpack_require__(38));
 
 var app = new Vue({
   el: '#app'
@@ -42535,7 +42535,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources\\assets\\js\\components\\Example.vue"
+Component.options.__file = "resources\\assets\\js\\components\\Request.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
@@ -42545,9 +42545,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-69c1ab52", Component.options)
+    hotAPI.createRecord("data-v-f90c1e08", Component.options)
   } else {
-    hotAPI.reload("data-v-69c1ab52", Component.options)
+    hotAPI.reload("data-v-f90c1e08", Component.options)
 ' + '  }
   module.hot.dispose(function (data) {
     disposed = true
@@ -42688,6 +42688,28 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {
@@ -42710,20 +42732,84 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-md-8 col-md-offset-2" }, [
-          _c("div", { staticClass: "panel panel-default" }, [
-            _c("div", { staticClass: "panel-heading" }, [
-              _vm._v("Example Component")
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "panel-body" }, [
-              _vm._v(
-                "\n                    I'm an example component!\n                "
-              )
-            ])
-          ])
+    return _c("div", { staticClass: "panel-default" }, [
+      _c("div", { staticClass: "panel-body" }, [
+        _c("form", { attrs: { action: "", method: "post" } }, [
+          _c("label", { attrs: { for: "design_id" } }),
+          _vm._v(" "),
+          _c(
+            "select",
+            { staticClass: "form-control", attrs: { name: "design_id" } },
+            [
+              _c("option", { attrs: { value: "" } }),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "" } })
+            ]
+          ),
+          _vm._v(" "),
+          _c("label", { attrs: { for: "gender" } }),
+          _vm._v(" "),
+          _c(
+            "select",
+            {
+              staticClass: "form-control",
+              staticStyle: { "margin-top": "5px" },
+              attrs: { name: "gender" }
+            },
+            [
+              _c("option", { attrs: { value: "male" } }, [_vm._v("Male")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "female" } }, [_vm._v("Female")])
+            ]
+          ),
+          _vm._v(" "),
+          _c("label", { attrs: { for: "size" } }, [_vm._v("Size:")]),
+          _vm._v(" "),
+          _c(
+            "select",
+            {
+              staticClass: "form-control",
+              staticStyle: { "margin-top": "5px" },
+              attrs: { name: "size" }
+            },
+            [
+              _c("option", { attrs: { value: "" } }),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "small" } }, [_vm._v("Small")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "medium" } }, [_vm._v("Medium")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "large" } }, [_vm._v("Large")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "extra-large" } }, [
+                _vm._v("Extra-Large")
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c("label", { attrs: { for: "measurement" } }, [
+            _vm._v("Measurement(sh,leg,arm-len,weist,l,):")
+          ]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "form-control",
+            attrs: { type: "text", name: "measurment" }
+          }),
+          _vm._v(" "),
+          _c("label", { attrs: { for: "request_img" } }, [
+            _vm._v("Upload Image")
+          ]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "form-control",
+            attrs: { type: "file", name: "request_img[]", multiple: "true" }
+          }),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "btn btn-primary btn-sm",
+            staticStyle: { "margin-top": "10px" },
+            attrs: { type: "submit", name: "Submit" }
+          })
         ])
       ])
     ])
@@ -42734,7 +42820,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-69c1ab52", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-f90c1e08", module.exports)
   }
 }
 
