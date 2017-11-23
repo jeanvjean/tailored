@@ -52,7 +52,7 @@
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
             <div class="panel panel-default">
-                <div class="panel-heading">{{ Auth::user()->firstname }}'s Profile</div>
+                <div class="panel-heading">{{ Auth::user()->name }}'s Profile</div>
                 <div class="panel-body">
                     <br>
                     <h3 align="center">Update Profile</h3>
