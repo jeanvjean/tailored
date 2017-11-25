@@ -17,15 +17,9 @@ Route::get('Padd_to_cart/{id}',['uses'=>'PurchaseController@getAddToCart','as'=>
 Route::get('shopping-cart',['uses'=>'ProductController@getCart','as'=>'products.shoppingCart']);
 Route::get('/','PagesController@getIndex');
 Route::get('showDesign', 'PagesController@showDesign');
-Route::get('/reduce/{id}', [
-    'uses' => 'ProductController@getReduceByOne',
-    'as' => 'product.reduceByOne'
-]);
-
-Route::get('/remove/{id}', [
-    'uses' => 'ProductController@getRemoveItem',
-    'as' => 'product.remove'
-]);
+Route::get('/reduce/{id}', ['uses' => 'ProductController@getReduceByOne','as' => 'product.reduceByOne']);
+Route::get('/remove/{id}', ['uses' => 'ProductController@getRemoveItem','as' => 'product.remove']);
+Route::get('empty','ProductController@empty')->name('clearCart');
 
 Route::group(['middleware'=>['web','auth']],function(){
     //checkout

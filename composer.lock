@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "428292a345ee908117706b4d98ae318a",
+    "content-hash": "e03ff24ca7f369010bd9c2e6620d83c8",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -317,48 +317,6 @@
             "time": "2017-06-15T17:19:42+00:00"
         },
         {
-            "name": "ghanem/rating",
-            "version": "1.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/AbdullahGhanem/rating.git",
-                "reference": "2709cf334f0daabb2317b8f5fa8dc3d864b87e60"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/AbdullahGhanem/rating/zipball/2709cf334f0daabb2317b8f5fa8dc3d864b87e60",
-                "reference": "2709cf334f0daabb2317b8f5fa8dc3d864b87e60",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/support": "~5.0",
-                "php": ">=5.5.9"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Ghanem\\Rating\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "abdullah ghanem",
-                    "email": "3bdullah.ghanem@gmail.com"
-                }
-            ],
-            "description": "Rating syetem for Laravel 5",
-            "keywords": [
-                "Ratable",
-                "Rating",
-                "laravel"
-            ],
-            "time": "2017-04-25T22:42:00+00:00"
-        },
-        {
             "name": "gloudemans/shoppingcart",
             "version": "2.4.0",
             "source": {
@@ -504,6 +462,54 @@
                 }
             ],
             "time": "2015-04-20T18:58:01+00:00"
+        },
+        {
+            "name": "juliobitencourt/laravel-cart",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/juliobitencourt/laravel-cart.git",
+                "reference": "46c6687efa789700a3fb4335dfb5718b7f963ab7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/juliobitencourt/laravel-cart/zipball/46c6687efa789700a3fb4335dfb5718b7f963ab7",
+                "reference": "46c6687efa789700a3fb4335dfb5718b7f963ab7",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "~5.0|~5.1@dev",
+                "illuminate/session": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpspec/phpspec": "~2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JulioBitencourt\\Cart\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Julio Bitencourt",
+                    "email": "julio@contagia.com.br",
+                    "homepage": "http://www.contagia.com.br",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A lightweight PHP Shopping Cart for Laravel 5.",
+            "homepage": "http://github.com/juliobitencourt/laravel-cart",
+            "keywords": [
+                "cart",
+                "laravel"
+            ],
+            "time": "2015-10-10T17:39:43+00:00"
         },
         {
             "name": "laravel/framework",
@@ -2559,6 +2565,48 @@
                 "fixtures"
             ],
             "time": "2017-08-15T16:48:10+00:00"
+        },
+        {
+            "name": "ghanem/rating",
+            "version": "1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AbdullahGhanem/rating.git",
+                "reference": "2709cf334f0daabb2317b8f5fa8dc3d864b87e60"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AbdullahGhanem/rating/zipball/2709cf334f0daabb2317b8f5fa8dc3d864b87e60",
+                "reference": "2709cf334f0daabb2317b8f5fa8dc3d864b87e60",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.0",
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ghanem\\Rating\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "abdullah ghanem",
+                    "email": "3bdullah.ghanem@gmail.com"
+                }
+            ],
+            "description": "Rating syetem for Laravel 5",
+            "keywords": [
+                "Ratable",
+                "Rating",
+                "laravel"
+            ],
+            "time": "2017-04-25T22:42:00+00:00"
         },
         {
             "name": "hamcrest/hamcrest-php",

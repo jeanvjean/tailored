@@ -164,8 +164,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         \Torann\GeoIP\GeoIPServiceProvider::class,
-        Gloudemans\Shoppingcart\ShoppingcartServiceProvider::class,
-        
+
 
 
 
@@ -173,7 +172,6 @@ return [
         /*
          * Package Service Providers...
          */
-
         /*
          * Application Service Providers...
          */

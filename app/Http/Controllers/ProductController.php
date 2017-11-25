@@ -44,7 +44,7 @@ class ProductController extends Controller
         } else {
             Session::forget('cart');
         }
-        return redirect()->route('product.shoppingCart');
+        return redirect()->route('products.shoppingCart');
     }
 
     public function getRemoveItem($id) {
@@ -58,7 +58,7 @@ class ProductController extends Controller
             Session::forget('cart');
         }
 
-        return redirect()->route('product.shoppingCart');
+        return redirect()->route('products.shoppingCart');
     }
     public function getCart()//return Cart view
     {
@@ -72,6 +72,15 @@ class ProductController extends Controller
 
 
         return view('shop.shopping-cart',['products'=>$cart->items]);
+    }
+    public function empty()
+    {
+        if(Session::has('cart')){
+
+        Session::forget('cart');
+    }
+
+        return back();
     }
 
     /**

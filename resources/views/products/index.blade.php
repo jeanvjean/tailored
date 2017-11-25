@@ -32,7 +32,7 @@
         						  <p>By:{{ $product->user->profile->brand }}</p>
         						</div>
                                 <div class="">
-                                    <a href="{{ route('products.addToCart',$product->id) }}" class="btn btn-primary btn-sm">Add To Cart</a>
+                                    <a href="{{ route('products.addToCart',['id'=>$product->id]) }}" class="btn btn-primary btn-sm">Add To Cart</a>
                                 </div>
         					</a>
         				</div>
