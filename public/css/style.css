@@ -254,6 +254,9 @@ h5.w3l-subtitle {
 	-moz-transition:.5s all;
 	transition:.5s all;
 }
+.img-responsive:hover{
+		transform:scale(2)
+}
 .w3welcome-grids img.img-responsive:hover {
 	-webkit-box-shadow: -7px 7px 5px rgb(195, 195, 195);
 	-moz-box-shadow: -7px 7px 5px rgb(195, 195, 195);
